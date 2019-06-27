@@ -1,0 +1,93 @@
+<div class="jumbotron">
+<body>  
+    <div>
+        <nav class="menu">
+		<ul>
+			<li id="a"><a href="#a">Executive</a>
+				<div>
+                    {{# each contents }}
+					<hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>                    
+                     {{/each}}
+				</div>
+			</li>
+			<li id="b"><a href="#b">Internal Audit</a>
+				<div>
+                   {{# each audits }}                   
+                    <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, {{ this.extension }} </p> 
+                    {{/each}}
+                   		
+				</div>
+			</li>
+			<li id="c"><a href="#c">Risk Management</a>
+				<div>
+					{{# each risks }}	
+                    <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>
+                    {{/each}} 
+				</div>                
+			</li>
+
+            <li id="d"><a href="#d">Customer Service</a>
+				<div>
+					{{# each customers }}	
+                    <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>
+                    {{/each}} 
+				</div>                
+			</li>
+
+            <li id="e"><a href="#e">Marketing</a>
+				<div>
+					{{# each markets }}	
+                    <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>
+                    {{/each}} 
+				</div>                
+			</li>
+            <li id="f"><a href="#f">Actuarial</a>
+				<div>
+					{{# each actuats }}	
+                    <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>
+                    {{/each}} 
+				</div>                
+			</li>
+
+
+            <li id="g"><a href="#g">HR & Administration</a>
+				<div>
+					{{# each admins }}	
+                    <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>
+                    {{/each}} 
+				</div>                
+			</li>
+
+            <li id="h"><a href="#h">Administration</a>
+				<div>
+					{{# each administrations }}	
+                    <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>
+                    {{/each}} 
+				</div>                
+			</li>
+
+            <li id="i"><a href="#i">ICT</a>
+				<div>
+					{{# each icts }}	
+                    <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>
+                    {{/each}} 
+				</div>                
+			</li>
+
+            <li id="j"><a href="#j">Finance</a>
+				<div>
+					{{# each icts }}	
+                    <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>
+                    {{/each}} 
+				</div>                            
+			</li>                                                                                              
+    	</ul> 
+
+        <nav class="menu">
+		
+	</nav>
+   
+	
+</body>
+
+</html>

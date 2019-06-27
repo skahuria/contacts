@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Westlands Branch</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet" type="text/css">
+</head>
+<nav class="navbar navbar-dark bg-dark navbar-static-top navbar-expand-md">
+    <div class="container">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span>
+        </button> <a class="navbar-brand" href="/">Centenary House</a>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav mr-auto">
+                <li class="nav-item"><a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="active nav-item"><a href="/westlands" class="nav-link">Westlands</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="jumbotron text-center">
+    <h5>Branch Info</h5>
+    <p> 2nd Floor, Off Ring Road,Westlands,P.O. Box 1870 - 00200, Nairobi. Tel 254-20-4247000/3504174/4192000. Cell +254 720-113122,0733-777717,0730-667000. Email: info@paciskenya.com</p>
+     <hr class="my-4">
+</div> 
+
+
+<div class="jumbotron-info","well well-lg">
+    <div class="row">   
+<nav class="menu">
+    <ul>
+        <li id="a"><a href="#a">Executive</a>
+				<div>
+                    {{# each contents }}
+					<hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>                    
+                     {{/each}}
+				</div>
+			</li>
+            <li id="b"><a href="#b">Internal Audit</a>
+				<div>
+                   {{# each audits }}                   
+                    <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, {{ this.extension }} </p> 
+                    {{/each}}
+                   		
+				</div>
+			</li>
+			<li id="c"><a href="#c">Risk Management</a>
+				<div>
+					{{# each risks }}	
+                    <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>
+                    {{/each}} 
+				</div>                
+			</li>
+
+            <li id="d"><a href="#d">Customer Service</a>
+				<div>
+					{{# each customers }}	
+                    <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>
+                    {{/each}} 
+				</div>                
+			</li>
+
+            <li id="e"><a href="#e">Marketing</a>
+				<div>
+					{{# each markets }}	
+                    <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>
+                    {{/each}} 
+				</div>                
+			</li>
+            <li id="f"><a href="#f">Actuarial</a>
+				<div>
+					{{# each actuats }}	
+                    <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>
+                    {{/each}} 
+				</div>                
+			</li>
+
+
+            <li id="g"><a href="#g">HR & Administration</a>
+				<div>
+					{{# each admins }}	
+                    <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>
+                    {{/each}} 
+				</div>                
+			</li>
+
+            <li id="h"><a href="#h">Administration</a>
+				<div>
+					{{# each administrations }}	
+                    <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>
+                    {{/each}} 
+				</div>                
+			</li>
+
+            <li id="i"><a href="#i">ICT</a>
+				<div>
+					{{# each icts }}	
+                    <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>
+                    {{/each}} 
+				</div>                
+			</li>            
+
+            <li id="j"><a href="#j">Finance</a>
+				<div>
+					{{# each icts }}	
+                    <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>
+                    {{/each}} 
+			  </div>                                      
+			</li> 
+
+            <li id="k"><a href="#k">Finance</a>
+				<div>
+					{{# each icts }}	
+                    <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>
+                    {{/each}} 
+			  </div>                                      
+			</li>  
+
+    	</ul>
+    </ul>
+</nav>
+</div>
+
+ </div>
