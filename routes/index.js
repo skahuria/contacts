@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var Content = require('../models/content');
+var Operate = require('../models/operate');
 var Audit = require('../models/audit');
 var Risk = require('../models/risk');
 var Customer = require('../models/customer');
@@ -8,7 +8,13 @@ var Actuat = require('../models/actuat');
 var Market = require('../models/market');
 var Admin = require('../models/admin');
 var Administration = require('../models/administration');
-var Ict = require('../models/ict')
+var Ict = require('../models/ict');
+var Claim = require('../models/claim');
+var Medical = require('../models/medical');
+var Fin = require('../models/fin');
+
+
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -18,7 +24,7 @@ router.get('/', function(req, res, next) {
 /* GET Userlist page. */
 router.get('/westlands', function(req, res, next) {
     Audit.find(function(err, audit){
-    Content.find(function(err, content){
+    Operate.find(function(err, operate){
       Risk.find(function(err, risk){
         Customer.find(function(err, customer){
           Market.find(function(err, market){
@@ -26,9 +32,15 @@ router.get('/westlands', function(req, res, next) {
               Admin.find(function(err, admin){
                 Administration.find(function(err, administration){
                   Ict.find(function(err, ict){
-      res.render('westlands', { title: 'Westlands Branch', audits: audit, contents: content, risks: risk, customers: customer, markets: market, actuats: actuat, admins: admin,
-    administrations: administration, icts: ict});
-                   });
+                    Claim.find(function(err, claim){
+                      Medical.find(function(err,medical){
+                        Fin.find(function(err,fin){
+      res.render('westlands', { title: 'Westlands Branch', audits: audit, operates: operate, risks: risk, customers: customer, markets: market, actuats: actuat, admins: admin,
+    administrations: administration, icts: ict, claims: claim, medicals: medical, fins: fin});
+                           });
+                         });
+                      });
+                    });
                  });
                });
              });

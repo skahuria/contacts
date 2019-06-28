@@ -34,9 +34,9 @@
     <div class="row">   
 <nav class="menu">
     <ul>
-        <li id="a"><a href="#a">Executive</a>
+        <li id="a"><a href="#a">Operations</a>
 				<div>
-                    {{# each contents }}
+                    {{# each operates }}
 					<hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>                    
                      {{/each}}
 				</div>
@@ -57,24 +57,24 @@
 				</div>                
 			</li>
 
-            <li id="d"><a href="#d">Customer Service</a>
+            <li id="d"><a href="#d">Finance</a>
 				<div>
-					{{# each customers }}	
+					{{# each fins }}	
                     <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>
                     {{/each}} 
 				</div>                
 			</li>
 
-            <li id="e"><a href="#e">Marketing</a>
+            <li id="e"><a href="#e">Underwriting</a>
 				<div>
-					{{# each markets }}	
+					{{# each medicals }}	
                     <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>
                     {{/each}} 
 				</div>                
 			</li>
-            <li id="f"><a href="#f">Actuarial</a>
+            <li id="f"><a href="#f">Medical</a>
 				<div>
-					{{# each actuats }}	
+					{{# each medicals }}	
                     <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>
                     {{/each}} 
 				</div>                
@@ -89,14 +89,7 @@
 				</div>                
 			</li>
 
-            <li id="h"><a href="#h">Administration</a>
-				<div>
-					{{# each administrations }}	
-                    <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>
-                    {{/each}} 
-				</div>                
-			</li>
-
+            
             <li id="i"><a href="#i">ICT</a>
 				<div>
 					{{# each icts }}	
@@ -105,21 +98,39 @@
 				</div>                
 			</li>            
 
-            <li id="j"><a href="#j">Finance</a>
+            <li id="j"><a href="#j">Claims</a>
 				<div>
-					{{# each icts }}	
+					{{# each claims }}	
                     <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>
                     {{/each}} 
 			  </div>                                      
 			</li> 
 
-            <li id="k"><a href="#k">Finance</a>
+            <li id="k"><a href="#k">Actuarial</a>
 				<div>
-					{{# each icts }}	
+					{{# each actuats }}	
                     <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>
                     {{/each}} 
 			  </div>                                      
 			</li>  
+
+            <li id="l"><a href="#l">Customer Service</a>
+				<div>
+					{{# each customers }}	
+                    <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>
+                    {{/each}} 
+			  </div>                                      
+			</li> 
+
+             <li id="m"><a href="#m">Marketing</a>
+				<div>
+					{{# each markets }}	
+                    <hr><p>{{ this.fname }} {{ lname }}, {{ this.title }}, Ext: {{ this.extension }} </p>
+                    {{/each}} 
+			  </div>                                      
+			</li> 
+            
+
 
     	</ul>
     </ul>

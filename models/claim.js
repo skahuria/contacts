@@ -14,6 +14,6 @@ var schema = new Schema({
 });
 
 //model name
-module.exports = mongoose.model('Content', schema); 
+module.exports = mongoose.model('Claim', schema); 
 
 
